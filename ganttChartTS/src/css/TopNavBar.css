@@ -1,0 +1,25 @@
+.topnav{
+    width: 100%;
+    background-color: hsl(220, 48%, 90%);
+    height: 70px;
+    margin-bottom: 0px;
+}
+
+.container{
+    color:aqua;
+    margin-left: auto;
+    padding-left: 0px;
+    display: inline-block;
+}
+
+.title{
+    color: hsl(220, 46%, 22%);
+    padding-left: 2%;
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+
+a{
+    text-decoration: none;
+    padding: 25px 50px 75px 100px;
+}
