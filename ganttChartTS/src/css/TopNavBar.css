@@ -1,8 +1,11 @@
-.topnav{
+div.topnav{
     width: 100%;
     background-color: hsl(220, 48%, 90%);
-    height: 70px;
+    height: 80px;
     margin-bottom: 0px;
+}
+a{
+    text-decoration: none;
 }
 
 .container{
@@ -12,14 +15,23 @@
     display: inline-block;
 }
 
-.title{
+a.title{
     color: hsl(220, 46%, 22%);
-    padding-left: 2%;
-    font-size: 1.6rem;
+    padding: 1%;
+    font-size: 2rem;
     font-weight: bold;
+    padding-top: 20px;
 }
 
-a{
-    text-decoration: none;
-    padding: 25px 50px 75px 100px;
+a.dropdown{
+    margin-left: 80%;
+    margin-top: 50px;
+}
+
+i{
+    font-size: 4rem;
+}
+
+hr{
+    margin: 0px;
 }

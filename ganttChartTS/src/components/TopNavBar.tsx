@@ -20,7 +20,7 @@ const TopNavBar = ({user} : {user:any}) => {
           <a href="/" className='title'>Gantt Chart</a>
           <a href={'/dashboard'}>Dashboard</a>
           <a href={'/myexam'}>Exam Scheduler</a>
-          <a ><i className="bi bi-list"></i></a>
+          <a className='dropdown'><i className="bi bi-list"></i></a>
         </div>
       </div>
       <hr/>
