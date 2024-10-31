@@ -1,7 +1,6 @@
 import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
-import './css/App.css'
 import { Navigate, Route, Routes } from 'react-router-dom'
 import Category from './components/Category'
 import TopNavBar from './components/TopNavBar'
@@ -68,6 +67,7 @@ function App() {
         <Routes>
           <Route path='/' element={<Navigate to={'/categoryName'} />} />
           <Route path='/categoryName' element={<Category categoryName={category} />} />
+      
         </Routes>
 
       </main>

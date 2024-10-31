@@ -2,17 +2,19 @@ div.topnav{
     width: 100%;
     background-color: hsl(220, 48%, 90%);
     height: 80px;
-    margin-bottom: 0px;
+
 }
+
 a{
     text-decoration: none;
+    padding-left: 3%;
 }
 
 .container{
     color:aqua;
     margin-left: auto;
     padding-left: 0px;
-    display: inline-block;
+    display: inline;
 }
 
 a.title{
@@ -20,16 +22,11 @@ a.title{
     padding: 1%;
     font-size: 2rem;
     font-weight: bold;
-    padding-top: 20px;
 }
 
 a.dropdown{
-    margin-left: 80%;
-    margin-top: 50px;
-}
+    float: right;
 
-i{
-    font-size: 4rem;
 }
 
 hr{
