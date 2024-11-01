@@ -8,27 +8,30 @@ div.topnav{
 a{
     text-decoration: none;
     padding-left: 3%;
+    
 }
 
 .container{
-    color:aqua;
-    margin-left: auto;
-    padding-left: 0px;
     display: inline;
 }
 
-a.title{
+.title{
     color: hsl(220, 46%, 22%);
-    padding: 1%;
-    font-size: 2rem;
+    padding-left: 1%;
     font-weight: bold;
+    vertical-align: middle;
+    
 }
 
-a.dropdown{
+.dropdown{
+    position: relative;
     float: right;
-
+   
 }
 
-hr{
-    margin: 0px;
+/* 
+ Hamberger Icon Top navigation bar
+*/
+.icon-100{
+    font-size: 3.5rem;
 }

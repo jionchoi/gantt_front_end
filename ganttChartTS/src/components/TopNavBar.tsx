@@ -14,10 +14,11 @@ const TopNavBar = ({user} : {user:any}) => {
           <a href="/" className='title'>Gantt Chart</a>
           <a href={'/dashboard'}>Dashboard</a>
           <a href={'/myexam'}>Exam Scheduler</a>
-          <a className='dropdown'><i className="bi bi-list"></i></a>
+          <a>Placeholder</a>
+          <a>Onemore?</a>
+          <a className='dropdown'><i className="bi bi-list icon-100"></i></a>
         </div>
       </div>
-      <hr/>
     </>
     // <Navbar expand="lg" className="bg-body-tertiary">
     //   <Container fluid className="container">
