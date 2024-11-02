@@ -7,18 +7,18 @@ const TopNavBar = ({user} : {user:any}) => {
     console.log("clicked");
   }
 
+
   return (
     <>
       <div className='topnav'>
-        <div className='container'>
           <a href="/" className='title'>Gantt Chart</a>
           <a href={'/dashboard'}>Dashboard</a>
           <a href={'/myexam'}>Exam Scheduler</a>
           <a>Placeholder</a>
           <a>Onemore?</a>
-          <a className='dropdown'><i className="bi bi-list icon-100"></i></a>
-        </div>
+          <a href="/profile" className='dropdown'>{user.name} &ensp;<i className="bi bi-person-circle icon-100"></i></a>
       </div>
+
     </>
     // <Navbar expand="lg" className="bg-body-tertiary">
     //   <Container fluid className="container">

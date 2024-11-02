@@ -1,37 +1,33 @@
-div.topnav{
+:root{
+    --titletext: hsl(220, 46%, 22%);
+}
+
+div.topnav {
     width: 100%;
     background-color: hsl(220, 48%, 90%);
     height: 80px;
-
+    display: flex;
+    align-items: center; /* Vertically align the content */
+    justify-content: space-between; /* Space between different elements */
+    gap: 30px; /* Spacing between anchor tags */
 }
 
-a{
+a {
     text-decoration: none;
-    padding-left: 3%;
-    
-}
-
-.container{
-    display: inline;
 }
 
 .title{
-    color: hsl(220, 46%, 22%);
-    padding-left: 1%;
     font-weight: bold;
-    vertical-align: middle;
-    
+    color: var(--titletext);
+    font-size: 2rem;
+    padding-left: 1.5%;
 }
 
 .dropdown{
-    position: relative;
-    float: right;
-   
+    margin-left: auto; /* Push dropdown to the far right */
+    padding-right: .8%;
 }
 
-/* 
- Hamberger Icon Top navigation bar
-*/
-.icon-100{
-    font-size: 3.5rem;
+.icon-100 {
+    font-size: 2rem;
 }

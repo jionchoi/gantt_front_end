@@ -50,7 +50,7 @@ function App() {
   //placeholder for categoryName object
   const user: User = {
     id: '',
-    name: 'Gantt Chart',
+    name: 'Jion Choi',
     email: '',
     photoURL: '',
     status: true,
