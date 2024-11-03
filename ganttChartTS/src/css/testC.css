@@ -1,0 +1,24 @@
+.category__container{
+    background-color: hsl(208, 22%, 83%);
+    margin-top: 4rem;
+    margin-left: 4rem;
+    position: relative;
+    width: 18%;
+    height: 20rem;
+    border-radius: 6.2%;
+
+}
+
+img{
+    width: 100%;
+    height: 60%;
+    top: 0;
+    opacity: 0.5;
+    border-radius: inherit;
+}
+.category__title{
+    position: absolute;
+    top: 0;
+    font-size: 2rem;
+    font-weight: bold;
+}

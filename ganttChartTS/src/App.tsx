@@ -4,6 +4,7 @@ import viteLogo from '/vite.svg'
 import { Navigate, Route, Routes } from 'react-router-dom'
 import Category from './components/Category'
 import TopNavBar from './components/TopNavBar'
+import AddCategory from './components/AddCategory'
 
 
 function App() {
@@ -19,8 +20,8 @@ function App() {
 
   //declare types for category componenet
   type Category = {
-    title: string;
     name: string;
+    type: string;
     email: string;
     photoURL: string;
     status: boolean;
@@ -39,8 +40,8 @@ function App() {
 
   //placeholder for categoryName object
   const category: Category = {
-    title: '',
-    name: '',
+    name: 'School',
+    type: 'school',
     email: '',
     photoURL: '',
     status: true,
@@ -57,18 +58,19 @@ function App() {
     priority: Priority.LOW
   }
 
-  
+
   return (
     <>
-    { /* Top Navigation Bar */}
-    <TopNavBar user={user}/>
+      { /* Top Navigation Bar */}
+      <TopNavBar user={user} />
       <main>
         { /* Setting Routes for urls */}
         <Routes>
           <Route path='/' element={<Navigate to={'/categoryName'} />} />
           <Route path='/categoryName' element={<Category categoryName={category} />} />
-      
         </Routes>
+        <AddCategory />
+        <AddCategory />
 
       </main>
     </>
