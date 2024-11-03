@@ -1,5 +1,6 @@
 :root{
-    --titletext: hsl(220, 46%, 22%);
+    --titleText: hsl(220, 46%, 22%);
+    --anchorHover: hsl(220, 46%, 62%);
 }
 
 div.topnav {
@@ -16,11 +17,19 @@ a {
     text-decoration: none;
 }
 
+a:hover{
+    color: var(--anchorHover);
+}
+
 .title{
     font-weight: bold;
     color: var(--titletext);
     font-size: 2rem;
     padding-left: 1.5%;
+}
+
+a.title:hover{
+    --titleText: hsl(220, 46%, 20%);
 }
 
 .dropdown{
