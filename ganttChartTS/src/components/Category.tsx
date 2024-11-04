@@ -23,16 +23,27 @@ const Category = ({ categoryName }: { categoryName: any }) => {
         //     </div>
         // </Link>
 
-        <Link to={`${categoryName.name}`} className='category_item'>
-            <div className='category__header'>
-                <div className='category__image'>
-                    <img src={"vite.svg"} alt={categoryName.name} />
-                </div>
-                <div className='category__details'>
-                    <p className="contact_name">{categoryName.name}</p>
-                    <p className="contact_title">{categoryName.type}</p>
-                </div>
+        // <Link to={`${categoryName.name}`} className='category_item'>
+        //     <div className='category__header'>
+        //         <div className='category__image'>
+        //             <img src={"vite.svg"} alt={categoryName.name} />
+        //         </div>
+        //         <div className='category__details'>
+        //             <p className="contact_name">{categoryName.name}</p>
+        //             <p className="contact_title">{categoryName.type}</p>
+        //         </div>
                 
+        //     </div>
+        // </Link>
+        <Link to={`${categoryName.name}`} className="category__container">
+        <div className="category__container">
+                <img src="/public/pop_cat.jpg" alt="category.name"/>
+                <p className="category__title">Category</p>
+                <div className="category__header123">
+                    <p>type</p>
+                    <p>Last Modified</p>
+                    <p>priority</p>
+                </div>
             </div>
         </Link>
     )

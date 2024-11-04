@@ -70,7 +70,6 @@ function App() {
           <Route path='/categoryName' element={<Category categoryName={category} />} />
         </Routes>
         <AddCategory />
-        <AddCategory />
 
       </main>
     </>
