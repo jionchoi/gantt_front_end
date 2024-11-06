@@ -2,6 +2,8 @@ import React from 'react';
 import Category from "./Category"
 import AddCategory from './AddCategory';
 
+
+//displaying category list (not category detail)
 const ContactList = ({ data, currentPage, getAllContacts }: { data: any, currentPage: number, getAllContacts: any }) => {
     return (
         <main className='main'>
