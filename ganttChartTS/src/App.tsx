@@ -5,7 +5,7 @@ import { Navigate, Route, Routes } from 'react-router-dom'
 import Category from './components/Category'
 import TopNavBar from './components/TopNavBar'
 import AddCategory from './components/AddCategory'
-
+import './css/App.css'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -63,12 +63,14 @@ function App() {
     <>
       { /* Top Navigation Bar */}
       <TopNavBar user={user} />
-      <main>
+      <main className='main__container'>
         { /* Setting Routes for urls */}
         <Routes>
           <Route path='/' element={<Navigate to={'/categoryName'} />} />
           <Route path='/categoryName' element={<Category categoryName={category} />} />
+          
         </Routes>
+        <AddCategory />
         <AddCategory />
 
       </main>
