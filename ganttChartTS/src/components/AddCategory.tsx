@@ -7,7 +7,6 @@ const AddCategory = () => {
 
     return (
         <>
-<<<<<<< HEAD
             <div className="add__container">
                 <i className="bi bi-plus icon-plus"></i>
             </div>
