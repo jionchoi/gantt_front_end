@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 import '../css/testC.css'
 //for tasks' details (schedule and due date, and more)
 const AddCategory = () => {
-    
+    //this is for testing
 
     return (
         <>
