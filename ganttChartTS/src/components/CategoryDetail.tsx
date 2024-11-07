@@ -8,7 +8,7 @@ const CategoryDetail = ({ categoryName } : {categoryName: any}) => {
 
     return (
         <>
-            <Link to={`/categoryName`} className="contact__item"> {/* this categoryName should be the name of the category */}
+            <Link to={`/${categoryName.name}`} className="contact__item"> {/* this categoryName should be the name of the category */}
                 <div className="contact__header">
                     <div className="contact__image">
                         <img src={categoryName.photoUrl} alt={categoryName.name} />

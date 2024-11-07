@@ -7,8 +7,8 @@ const AddCategory = () => {
 
     return (
         <>
-            <div className='add__container'>
-                <i className='bi bi-plus icon-plus'></i>
+            <div className="add__container">
+                <i className="bi bi-plus icon-plus"></i>
             </div>
         </>
     )

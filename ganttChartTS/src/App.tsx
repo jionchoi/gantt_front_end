@@ -4,9 +4,8 @@ import viteLogo from '/vite.svg'
 import { Navigate, Route, Routes } from 'react-router-dom'
 import TopNavBar from './components/TopNavBar'
 import AddCategory from './components/AddCategory'
-import './css/App.css'
-import Category from './components/Category'
 import Task from './components/Task'
+import "./css/App.css"
 
 function App() {
   const [count, setCount] = useState(0)
@@ -19,7 +18,9 @@ function App() {
     LOW
   }
 
-  //declare types for category componenet
+
+  //interface only applies to objects
+  //interface for category object
   interface Category {
     name: string,
     type: string,
@@ -29,7 +30,7 @@ function App() {
     priority: Priority
   }
 
-  //declare types for category componenet
+  //interface for User object
   interface User {
     id: string,
     name: string,
@@ -39,15 +40,16 @@ function App() {
     priority: Priority
   }
 
+  //interface for User object
   interface Task {
     title: string,
-    name: string,
-    duedate: string,
-    done: boolean,
-    duration: string,
-    startDate: string,
+    name: string, 
+    duedate: string, //should be changed it something eles
+    done: Boolean,
+    duration: string, 
+    startDate: string, 
     endDate: string,
-    subtasks: Array<string>
+    subtasks: any
   }
 
   //placeholder for categoryName object
@@ -70,36 +72,42 @@ function App() {
     priority: Priority.LOW
   }
 
-  //placeholder for categoryName object
+  //placeholder for task object
   const task: Task = {
-    title: "week 3 assignment",
-    name: "math",
-    duedate: "",
+    title: 'Week 3 Lab Assignment',
+    name: 'idk', 
+    duedate: 'duedate', //should be changed it something eles
     done: false,
-    duration: "",
-    startDate: "",
-    endDate: "",
-    subtasks: []
+    duration: 'duration 20days', 
+    startDate: 'start date ', //need to get the date of it (Thursday) 
+    endDate: 'end date',
+    subtasks: {
+      first: "create a function",
+      second: "something someting"
+    }
+  }
+  
+  function getUserInformation(){
+
   }
 
   return (
     <>
       { /* Top Navigation Bar */}
       <TopNavBar user={user} />
+
       <main>
         { /* Setting Routes for urls */}
         <Routes>
-          <Route path='/' element={<Navigate to={'/dashboard'} />} />
+        <Route path='/' element={<Navigate to={'/dashboard'} />} />
           <Route path='/dashboard' 
-                element={
-                  <>
-                    <AddCategory/>
-                    <Category categoryName={category}/>
-                  </>}/>
+          element={
+            <>
+              <AddCategory />
+              <Category categoryName={category} />
+            </>} /> {/* it shuold be category list and that ashould be tasklist*/}
           <Route path='/categoryName' element={<Task task={task} />} />
-          
         </Routes>
-
       </main>
     </>
   )
