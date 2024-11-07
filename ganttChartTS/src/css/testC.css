@@ -19,6 +19,7 @@ img {
 
 .category__title {
     position: absolute;
+<<<<<<< HEAD
     top: 4.5rem;
     margin-left: 22%;
     font-size: 1.8rem;
@@ -47,3 +48,9 @@ img {
     font-size: 6rem;
 
 }
+=======
+    top: 0;
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+>>>>>>> 64a6c37a005ae32ded4624c4383f5672b0866372
