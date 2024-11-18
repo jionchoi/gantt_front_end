@@ -1,6 +1,15 @@
+:root{
+    --numOfColumns: 1;
+}
+
 .task__container{
     display: grid;
-    border: 5px solid red;
+    grid-template-columns: repeat(var(--numOfColumns), auto);
+    border: 5px solid midnightblue;
+}
+
+.grid__element{
+
 }
 
 .task__container:hover{

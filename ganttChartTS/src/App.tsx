@@ -7,6 +7,7 @@ import TopNavBar from './components/TopNavBar'
 import AddCategory from './components/AddCategory'
 import Task from './components/Task'
 import "./css/App.css"
+import TaskGrid from './components/TaskGrid'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -107,7 +108,7 @@ function App() {
               <AddCategory />
               <Category categoryName={category} />
             </>} /> {/* it shuold be category list and that ashould be tasklist*/}
-          <Route path='/categoryName' element={<Task task={task} />} />
+          <Route path='/categoryName' element={<TaskGrid task={task} />} />
         </Routes>
       </main>
     </>

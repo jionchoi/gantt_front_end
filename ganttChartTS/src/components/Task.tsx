@@ -2,7 +2,7 @@ import React from 'react';
 import '../css/Task.css'
 /* TO-DO 
     1. make it auto save
-    2. Add task button on the very bottom        
+    2. Add task button on the very bottom 
 */
 
 const Task: any = ({ task }: { task: any}) => {
