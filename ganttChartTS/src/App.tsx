@@ -107,7 +107,7 @@ function App() {
             <>
               <AddCategory />
               <Category categoryName={category} />
-            </>} /> {/* it shuold be category list and that ashould be tasklist*/}
+            </>} /> {/* it shuold be category list and that should be tasklist*/}
           <Route path='/categoryName' element={<TaskGrid task={task} />} />
         </Routes>
       </main>

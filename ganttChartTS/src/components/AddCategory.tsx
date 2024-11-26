@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import '../css/testC.css'
+import '../css/Category.css'
 //for tasks' details (schedule and due date, and more)
 const AddCategory = () => {
 
@@ -9,21 +9,39 @@ const AddCategory = () => {
     }
 
     function openModal(): void{
-        document.getElementsByClassName("add__task")[0].showModal();
+        let dialog: HTMLDialogElement = document.getElementById("dlg") as HTMLDialogElement;
+        dialog.showModal();
     }   
 
     function closeModal(): void{
-
+        let dialog: HTMLDialogElement = document.getElementById("dlg") as HTMLDialogElement;
+        dialog.close();
+        console.log("clicked")
     }
 
     return (
         <>
-            <div className="add__container" onClick={() => openModal()}>
+            <div className="add__container"  onClick={() => openModal()}>
                 <i className="bi bi-plus icon-plus"></i>
             </div>
-            <dialog className="add__task">
+            <div className='dialog__container'>
+                <dialog id="dlg" className="add__task">
+                    <form>
+                        <label>Category Name </label> <br/>
+                        <input type="text" /> <br/>
+                        <label>Priority </label> <br/>
+                        <select id="priority" name="priority">
+                            <option value="URGENT">URGENT</option>
+                            <option value="HIGH">HIGH</option>
+                            <option value="MEDIUM">MEDIUM</option>
+                            <option value="LOW">LOW</option>
+                        </select> <br/>
+                        <input type="submit"/>
+                    </form>
+                    <i className="bi bi-x" id="exit" onClick={() => closeModal()}></i>
 
-            </dialog>
+                </dialog>
+            </div>
         </>
     )
 }
