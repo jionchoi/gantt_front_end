@@ -11,12 +11,13 @@ const AddCategory = () => {
     function openModal(): void{
         let dialog: HTMLDialogElement = document.getElementById("dlg") as HTMLDialogElement;
         dialog.showModal();
+        dialog.style.display = "flex";
     }   
 
     function closeModal(): void{
         let dialog: HTMLDialogElement = document.getElementById("dlg") as HTMLDialogElement;
         dialog.close();
-        console.log("clicked")
+        dialog.style.display = "none";
     }
 
     return (

@@ -51,6 +51,6 @@ img {
 .add__task{
     border: 2px solid black;
     border-radius: 0.8%;
-    display: flex;
+    display: none;
     margin-left: 50%;
 }

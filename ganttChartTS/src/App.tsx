@@ -48,8 +48,8 @@ function App() {
     name: string, 
     duedate: string, //should be changed it something eles
     done: Boolean,
-    duration: string, 
-    startDate: string, 
+    duration: number, 
+    startDate: Date, 
     endDate: string,
     subtasks: any
   }
@@ -80,8 +80,8 @@ function App() {
     name: 'idk', 
     duedate: 'duedate', //should be changed it something eles
     done: false,
-    duration: 'duration 20days', 
-    startDate: 'start date ', //need to get the date of it (Thursday) 
+    duration: 20, 
+    startDate: new Date(2024,11,1), //the month is 0-indexed
     endDate: 'end date',
     subtasks: {
       first: "create a function",
@@ -106,9 +106,9 @@ function App() {
           element={
             <>
               <AddCategory />
-              <Category categoryName={category} />
-            </>} /> {/* it shuold be category list and that should be tasklist*/}
-          <Route path='/categoryName' element={<TaskGrid task={task} />} />
+              <Category categoryName={category} /> {/* Change it to categoryList so that the website lists all categories*/} 
+            </>} /> 
+          <Route path='/categoryName' element={<TaskGrid task={task} />} /> {/* TaskGid is only one line and tasklist should list all main tasks and subtasks in on page*/}
         </Routes>
       </main>
     </>

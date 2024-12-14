@@ -3,9 +3,18 @@
 }
 
 .task__container{
-    display: grid;
-    grid-template-columns: repeat(var(--numOfColumns), auto);
-    border: 5px solid midnightblue;
+
+    /* display: grid;
+    grid-template-columns: repeat(var(--numOfColumns), auto); */
+    height: 30px;
+    border: 1px solid midnightblue;
+    white-space: nowrap; /* Prevent line wrapping */
+    overflow-x: scroll;
+    
+}
+
+::-webkit-scrollbar {
+    display: none;
 }
 
 .grid__element{
@@ -13,5 +22,14 @@
 }
 
 .task__container:hover{
+    
+}
+
+.dayButton {
+    padding-left: 20px;
+    border-radius: 3px;
+    text-align: center;
+    border: 1px solid #c8ccd4;
+    vertical-align: middle
     
 }
